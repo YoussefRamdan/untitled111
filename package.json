@@ -4,6 +4,7 @@
   "description": "A simple app to send notifications using Firebase",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,12 +12,17 @@
     "url": "git+https://github.com/YoussefRamdan/untitled111.git"
   },
   "keywords": [
-    "firbase"
+    "firebase"
   ],
   "author": "youssef",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/YoussefRamdan/untitled111/issues"
   },
-  "homepage": "https://github.com/YoussefRamdan/untitled111#readme"
+  "homepage": "https://github.com/YoussefRamdan/untitled111#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0",
+    "firebase-admin": "^9.8.0"
+  }
 }
