@@ -1,3 +1,15 @@
+// إضافة مكتبة للتحقق من التوقيت
+const { exec } = require('child_process');
+
+// تحقق من تزامن التوقيت
+exec('date', (error, stdout, stderr) => {
+    if (error) {
+        console.error(`Error fetching system time: ${error.message}`);
+        return;
+    }
+    console.log(`Current system time: ${stdout}`);
+});
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const admin = require('firebase-admin');
